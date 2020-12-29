@@ -16,6 +16,14 @@ func main() {
 		insts = append(insts, one)
 	}
 
+	/**
+	基于随机算法的负载均衡
+	基于RoundRobin算法的负载均衡
+	基于带权重RoundRobin算法的负载均衡
+	基于一致性hash算法的负载均衡
+	基于洗牌算法的负载均衡
+	基于优化洗牌算法的负载均衡
+	*/
 	var balanceNames = []string{"hash", "random", "roundrobin", "weight_roundrobin", "shuffle", "shuffle2"}
 
 	for _, name := range balanceNames {
